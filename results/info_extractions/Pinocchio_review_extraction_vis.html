@@ -1,0 +1,270 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+DBS: Broly – 20 Reddit Reviews (r/dbz)
+1. StarPlatinum55
+<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">Very good.</span> <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">It&#x27;s the best DB film imo.</span>
+2. LeratoNull
+<span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">Still inferior to Battle of Gods, still very good tho.</span>
+3. u4004
+<span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">Both movies have mediocre stories, both have entertaining characters.</span> <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">DBS: Broly has
+Minus, but it&#x27;s so disconnected from everything and out of nowhere that you can ignore it
+like the low-quality Toriyama fever dream it is.</span> <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">The animation quality alone decides the
+day, BoG&#x27;s best art style is nasty compared to DBS: Broly&#x27;s worst.</span>
+4. Kunxion
+<span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">Extremely good.</span> <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">One of the best Dragonball movies imo.</span>
+5. blade55555
+<span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">I enjoyed it.</span> <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">Fun watch and the fight scenes are fantastic.</span> Without spoilers, I watched
+Vegeta&#x27;s and the last fight scene way too many times.
+6. KeySlimePies
+<span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">I think it&#x27;s easily the best movie.</span> I ranked most of the movies in order of their quality.
+For example of how I rated them the way I did: while The Tree of Might is really well-
+received on this subreddit, I think it&#x27;s actually only so-so because <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">the first half of the
+movie is completely unrelated to the plot (putting out the forest fire) and the final
+fight with Turles is actually not that good.</span> This is my list in order of quality:  Good:
+Broly (2018), Battle of Gods, Wrath of the Dragon, Dead Zone, The World&#x27;s Strongest, Broly
+-- The Legendary Super Saiyan, Fusion Reborn, Resurrection &#x27;F&#x27;  So-so: The Return of
+Cooler, Cooler&#x27;s Revenge, The Tree of Might, Bojack Unbound, Broly -- Second Coming, Super
+Android 13!  Bad: Bio-Broly, Lord Slug
+7. ToodlesXIV
+<span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">It&#x27;s the best DB Movie by a mile, and honestly just peak Dragon Ball in general.</span> <span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">The
+script has Toriyama written all over it, and the animation is mind blowing.</span>
+8. shlam16
+Lore: 9/10  Story: 7/10  Animation: 10/10  Fights: 10/10  Music: 6/10 (others like the
+style, I didn&#x27;t go for it)  Pacing: 3/10 (the main reason it needs to be adapted in the
+anime)  TL;DR - <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">It&#x27;s good, watch it.</span> Then start reading the manga at Chapter 42 for the
+best arc in Super to date.
+9. [deleted]
+Pacing: 3/10  I agree with that. <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">The movie felt like it could have been at least 2x longer</span>
+(especially the first third) and they had to cut Toriyama&#x27;s script down a lot apparently.
+The director stated that Gogeta and Broly were originally going to fight on the Sun at one
+point.  If they expanded the Saiyan/Bardock segment (with Bardock&#x27;s last stand) and
+dedicate an episode to Gogeta vs Broly, then it would be amazing.
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+10. EP1K
+If they do adapt it I hope they don&#x27;t drag it on as long as BoG. I honestly can&#x27;t rewatch
+those episodes of Super they&#x27;re so drawn out. I&#x27;d love to see how Freeza held up so long
+against Broly. Maybe more Broly/Paragus backstory and more Planet Vegeta drama. The movie
+did so many things right but <span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">the pacing was definitely a weak point</span>.
+11. DetlefHemp
+<span class="lx-highlight" data-idx="17" style="background-color:#C8E6C9;">I really enjoyed it.</span> <span class="lx-highlight" data-idx="18" style="background-color:#D2E3FC;">I actually showed it to my girlfriend to try and get her to get over
+the whole &quot;anime is gay&quot; trap that a lot of people fall victim to... It was a success.</span>
+12. SSJRemuko
+<span class="lx-highlight" data-idx="19" style="background-color:#C8E6C9;">Its easily (imo) one of, if not the best DB related movie, ever.</span>
+13. BlueFootedTpeack
+<span class="lx-highlight" data-idx="20" style="background-color:#C8E6C9;">top tier,  nice animation, very fast and expressive, plenty of detailed looks, cool music,
+front loads the plot pretty heavily,  best db film</span>
+14. kakkarot_73
+<span class="lx-highlight" data-idx="21" style="background-color:#C8E6C9;">It’s great.</span> Oh and prepare yourself for the chants.
+15. lightedge
+<span class="lx-highlight" data-idx="22" style="background-color:#C8E6C9;">Overall really good lore, really good animation too.</span> <span class="lx-highlight" data-idx="23" style="background-color:#C8E6C9;">There is some bad character CGI
+though, such as the combined Goku and Vegeta beam attack that looks noticeably worse then
+the real 2d art.</span>
+16. Megadoomer2
+<span class="lx-highlight" data-idx="24" style="background-color:#C8E6C9;">I&#x27;d say that it&#x27;s one of my favourite DBZ movies - it&#x27;s either DBS Broly or Battle of
+Gods.</span>
+17. ArtisanofWar7
+<span class="lx-highlight" data-idx="25" style="background-color:#C8E6C9;">The pacing is the only true issue, the music chants are personal preference  Otherwise,
+<span class="lx-highlight" data-idx="26" style="background-color:#C8E6C9;">it&#x27;s probably the best if not one of the best dragonball movies there is</span></span>
+18. ItsLucs
+<span class="lx-highlight" data-idx="27" style="background-color:#C8E6C9;">It&#x27;s a good film, good animation, good music...</span> <span class="lx-highlight" data-idx="28" style="background-color:#C8E6C9;">But it&#x27;s empty, 30 min of story, 1h15 of
+fighting, and some scenes would have been more developped i think :) but <span class="lx-highlight" data-idx="29" style="background-color:#C8E6C9;">it&#x27;s still one of
+my favorite :)</span></span>
+19. Finally_Vanilla
+You know where Brolys dad said &quot;Attaaaaack!&quot; to broly? They did the same scene in this new
+one and <span class="lx-highlight" data-idx="30" style="background-color:#D2E3FC;">i laughed and exited</span>. I couldnt take it anymore.
+20. mhead26
+Looked a little disney in the graphics sometimes but other than that <span class="lx-highlight" data-idx="31" style="background-color:#C8E6C9;">it was great</span>.
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="31" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/32</span> |
+          Pos <span id="posInfo">[72-82]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "Very good.", "color": "#C8E6C9", "startPos": 72, "endPos": 82, "beforeText": "**Page 1**\n&quot;&quot;&quot;\nDBS: Broly \u2013 20 Reddit Reviews (r/dbz)\n1. StarPlatinum55\n", "extractionText": "Very good.", "afterText": " It&#x27;s the best DB film imo.\n2. LeratoNull\nStill inferior to Battle of Gods, still very good tho.\n3. u4004\nBoth movies have mediocre stories, both have", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Very good</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "It's the best DB film imo.", "color": "#C8E6C9", "startPos": 83, "endPos": 109, "beforeText": "**Page 1**\n&quot;&quot;&quot;\nDBS: Broly \u2013 20 Reddit Reviews (r/dbz)\n1. StarPlatinum55\nVery good. ", "extractionText": "It&#x27;s the best DB film imo.", "afterText": "\n2. LeratoNull\nStill inferior to Battle of Gods, still very good tho.\n3. u4004\nBoth movies have mediocre stories, both have entertaining characters. D", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best DB film</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "Still inferior to Battle of Gods, still very good tho.", "color": "#C8E6C9", "startPos": 124, "endPos": 178, "beforeText": "**Page 1**\n&quot;&quot;&quot;\nDBS: Broly \u2013 20 Reddit Reviews (r/dbz)\n1. StarPlatinum55\nVery good. It&#x27;s the best DB film imo.\n2. LeratoNull\n", "extractionText": "Still inferior to Battle of Gods, still very good tho.", "afterText": "\n3. u4004\nBoth movies have mediocre stories, both have entertaining characters. DBS: Broly has\nMinus, but it&#x27;s so disconnected from everything and out", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">very good</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "Both movies have mediocre stories, both have entertaining characters.", "color": "#C8E6C9", "startPos": 188, "endPos": 257, "beforeText": "Reviews (r/dbz)\n1. StarPlatinum55\nVery good. It&#x27;s the best DB film imo.\n2. LeratoNull\nStill inferior to Battle of Gods, still very good tho.\n3. u4004\n", "extractionText": "Both movies have mediocre stories, both have entertaining characters.", "afterText": " DBS: Broly has\nMinus, but it&#x27;s so disconnected from everything and out of nowhere that you can ignore it\nlike the low-quality Toriyama fever dream it", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly and Battle of Gods</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">mediocre stories, entertaining characters</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "DBS: Broly has Minus, but it's so disconnected from everything and out of nowhere that you can ignore it like the low-quality Toriyama fever dream it is.", "color": "#C8E6C9", "startPos": 258, "endPos": 411, "beforeText": ".\n2. LeratoNull\nStill inferior to Battle of Gods, still very good tho.\n3. u4004\nBoth movies have mediocre stories, both have entertaining characters. ", "extractionText": "DBS: Broly has\nMinus, but it&#x27;s so disconnected from everything and out of nowhere that you can ignore it\nlike the low-quality Toriyama fever dream it is.", "afterText": " The animation quality alone decides the\nday, BoG&#x27;s best art style is nasty compared to DBS: Broly&#x27;s worst.\n4. Kunxion\nExtremely good. One of the best", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">disconnected from everything and out of nowhere</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "The animation quality alone decides the day, BoG's best art style is nasty compared to DBS: Broly's worst.", "color": "#C8E6C9", "startPos": 412, "endPos": 518, "beforeText": " Broly has\nMinus, but it&#x27;s so disconnected from everything and out of nowhere that you can ignore it\nlike the low-quality Toriyama fever dream it is. ", "extractionText": "The animation quality alone decides the\nday, BoG&#x27;s best art style is nasty compared to DBS: Broly&#x27;s worst.", "afterText": "\n4. Kunxion\nExtremely good. One of the best Dragonball movies imo.\n5. blade55555\nI enjoyed it. Fun watch and the fight scenes are fantastic. Without s", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly animation</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">animation quality alone decides the day</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "Extremely good.", "color": "#C8E6C9", "startPos": 530, "endPos": 545, "beforeText": "ity Toriyama fever dream it is. The animation quality alone decides the\nday, BoG&#x27;s best art style is nasty compared to DBS: Broly&#x27;s worst.\n4. Kunxion\n", "extractionText": "Extremely good.", "afterText": " One of the best Dragonball movies imo.\n5. blade55555\nI enjoyed it. Fun watch and the fight scenes are fantastic. Without spoilers, I watched\nVegeta&#x27;s", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Extremely good</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "One of the best Dragonball movies imo.", "color": "#C8E6C9", "startPos": 546, "endPos": 584, "beforeText": "er dream it is. The animation quality alone decides the\nday, BoG&#x27;s best art style is nasty compared to DBS: Broly&#x27;s worst.\n4. Kunxion\nExtremely good. ", "extractionText": "One of the best Dragonball movies imo.", "afterText": "\n5. blade55555\nI enjoyed it. Fun watch and the fight scenes are fantastic. Without spoilers, I watched\nVegeta&#x27;s and the last fight scene way too many ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best Dragonball movies</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "I enjoyed it.", "color": "#C8E6C9", "startPos": 599, "endPos": 612, "beforeText": "he\nday, BoG&#x27;s best art style is nasty compared to DBS: Broly&#x27;s worst.\n4. Kunxion\nExtremely good. One of the best Dragonball movies imo.\n5. blade55555\n", "extractionText": "I enjoyed it.", "afterText": " Fun watch and the fight scenes are fantastic. Without spoilers, I watched\nVegeta&#x27;s and the last fight scene way too many times.\n6. KeySlimePies\nI thi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">enjoyed</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "Fun watch and the fight scenes are fantastic.", "color": "#C8E6C9", "startPos": 613, "endPos": 658, "beforeText": "best art style is nasty compared to DBS: Broly&#x27;s worst.\n4. Kunxion\nExtremely good. One of the best Dragonball movies imo.\n5. blade55555\nI enjoyed it. ", "extractionText": "Fun watch and the fight scenes are fantastic.", "afterText": " Without spoilers, I watched\nVegeta&#x27;s and the last fight scene way too many times.\n6. KeySlimePies\nI think it&#x27;s easily the best movie. I ranked most o", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Fun watch and the fight scenes are fantastic</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "I think it's easily the best movie.", "color": "#C8E6C9", "startPos": 757, "endPos": 792, "beforeText": "d it. Fun watch and the fight scenes are fantastic. Without spoilers, I watched\nVegeta&#x27;s and the last fight scene way too many times.\n6. KeySlimePies\n", "extractionText": "I think it&#x27;s easily the best movie.", "afterText": " I ranked most of the movies in order of their quality.\nFor example of how I rated them the way I did: while The Tree of Might is really well-\nreceive", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best movie</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "the first half of the movie is completely unrelated to the plot (putting out the forest fire) and the final fight with Turles is actually not that good.", "color": "#C8E6C9", "startPos": 1004, "endPos": 1156, "beforeText": "ample of how I rated them the way I did: while The Tree of Might is really well-\nreceived on this subreddit, I think it&#x27;s actually only so-so because ", "extractionText": "the first half of the\nmovie is completely unrelated to the plot (putting out the forest fire) and the final\nfight with Turles is actually not that good.", "afterText": " This is my list in order of quality:  Good:\nBroly (2018), Battle of Gods, Wrath of the Dragon, Dead Zone, The World&#x27;s Strongest, Broly\n-- The Legenda", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Tree of Might</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">completely unrelated to the plot and the final fight with Turles is actually not that good</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "It's the best DB Movie by a mile, and honestly just peak Dragon Ball in general.", "color": "#C8E6C9", "startPos": 1521, "endPos": 1601, "beforeText": "rn of\nCooler, Cooler&#x27;s Revenge, The Tree of Might, Bojack Unbound, Broly -- Second Coming, Super\nAndroid 13!  Bad: Bio-Broly, Lord Slug\n7. ToodlesXIV\n", "extractionText": "It&#x27;s the best DB Movie by a mile, and honestly just peak Dragon Ball in general.", "afterText": " The\nscript has Toriyama written all over it, and the animation is mind blowing.\n8. shlam16\nLore: 9/10  Story: 7/10  Animation: 10/10  Fights: 10/10  ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best DB Movie by a mile, and honestly just peak Dragon Ball</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "The script has Toriyama written all over it, and the animation is mind blowing.", "color": "#C8E6C9", "startPos": 1602, "endPos": 1681, "beforeText": "d Coming, Super\nAndroid 13!  Bad: Bio-Broly, Lord Slug\n7. ToodlesXIV\nIt&#x27;s the best DB Movie by a mile, and honestly just peak Dragon Ball in general. ", "extractionText": "The\nscript has Toriyama written all over it, and the animation is mind blowing.", "afterText": "\n8. shlam16\nLore: 9/10  Story: 7/10  Animation: 10/10  Fights: 10/10  Music: 6/10 (others like the\nstyle, I didn&#x27;t go for it)  Pacing: 3/10 (the main ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">animation is mind blowing</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "It's good, watch it.", "color": "#C8E6C9", "startPos": 1884, "endPos": 1904, "beforeText": "  Fights: 10/10  Music: 6/10 (others like the\nstyle, I didn&#x27;t go for it)  Pacing: 3/10 (the main reason it needs to be adapted in the\nanime)  TL;DR - ", "extractionText": "It&#x27;s good, watch it.", "afterText": " Then start reading the manga at Chapter 42 for the\nbest arc in Super to date.\n9. [deleted]\nPacing: 3/10  I agree with that. The movie felt like it co", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBS: Broly</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">good</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "The movie felt like it could have been at least 2x longer", "color": "#C8E6C9", "startPos": 2029, "endPos": 2086, "beforeText": "DR - It&#x27;s good, watch it. Then start reading the manga at Chapter 42 for the\nbest arc in Super to date.\n9. [deleted]\nPacing: 3/10  I agree with that. ", "extractionText": "The movie felt like it could have been at least 2x longer", "afterText": "\n(especially the first third) and they had to cut Toriyama&#x27;s script down a lot apparently.\nThe director stated that Gogeta and Broly were originally g", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">movie pacing</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">felt like it could have been at least 2x longer</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "the pacing was definitely a weak point", "color": "#C8E6C9", "startPos": 2745, "endPos": 2783, "beforeText": "see how Freeza held up so long\nagainst Broly. Maybe more Broly/Paragus backstory and more Planet Vegeta drama. The movie\ndid so many things right but ", "extractionText": "the pacing was definitely a weak point", "afterText": ".\n11. DetlefHemp\nI really enjoyed it. I actually showed it to my girlfriend to try and get her to get over\nthe whole &quot;anime is gay&quot; trap that a lot of", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">pacing</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">weak point</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "I really enjoyed it.", "color": "#C8E6C9", "startPos": 2800, "endPos": 2820, "beforeText": "e Broly/Paragus backstory and more Planet Vegeta drama. The movie\ndid so many things right but the pacing was definitely a weak point.\n11. DetlefHemp\n", "extractionText": "I really enjoyed it.", "afterText": " I actually showed it to my girlfriend to try and get her to get over\nthe whole &quot;anime is gay&quot; trap that a lot of people fall victim to... It was a su", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">really enjoyed</span>}</div>"}, {"index": 18, "class": "audience_impact", "text": "I actually showed it to my girlfriend to try and get her to get over the whole \"anime is gay\" trap that a lot of people fall victim to... It was a success.", "color": "#D2E3FC", "startPos": 2821, "endPos": 2976, "beforeText": "tory and more Planet Vegeta drama. The movie\ndid so many things right but the pacing was definitely a weak point.\n11. DetlefHemp\nI really enjoyed it. ", "extractionText": "I actually showed it to my girlfriend to try and get her to get over\nthe whole &quot;anime is gay&quot; trap that a lot of people fall victim to... It was a success.", "afterText": "\n12. SSJRemuko\nIts easily (imo) one of, if not the best DB related movie, ever.\n13. BlueFootedTpeack\ntop tier,  nice animation, very fast and expressi", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">success</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">the movie</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">girlfriend</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "Its easily (imo) one of, if not the best DB related movie, ever.", "color": "#C8E6C9", "startPos": 2991, "endPos": 3055, "beforeText": " to my girlfriend to try and get her to get over\nthe whole &quot;anime is gay&quot; trap that a lot of people fall victim to... It was a success.\n12. SSJRemuko\n", "extractionText": "Its easily (imo) one of, if not the best DB related movie, ever.", "afterText": "\n13. BlueFootedTpeack\ntop tier,  nice animation, very fast and expressive, plenty of detailed looks, cool music,\nfront loads the plot pretty heavily, ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DB related movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best DB related movie, ever</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "top tier, nice animation, very fast and expressive, plenty of detailed looks, cool music, front loads the plot pretty heavily, best db film", "color": "#C8E6C9", "startPos": 3077, "endPos": 3218, "beforeText": "lot of people fall victim to... It was a success.\n12. SSJRemuko\nIts easily (imo) one of, if not the best DB related movie, ever.\n13. BlueFootedTpeack\n", "extractionText": "top tier,  nice animation, very fast and expressive, plenty of detailed looks, cool music,\nfront loads the plot pretty heavily,  best db film", "afterText": "\n14. kakkarot_73\nIt\u2019s great. Oh and prepare yourself for the chants.\n15. lightedge\nOverall really good lore, really good animation too. There is some ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">top tier, nice animation, very fast and expressive, plenty of detailed looks, cool music, front loads the plot pretty heavily, best db film</span>}</div>"}, {"index": 21, "class": "opinion_statement", "text": "It\u2019s great.", "color": "#C8E6C9", "startPos": 3235, "endPos": 3246, "beforeText": ",  nice animation, very fast and expressive, plenty of detailed looks, cool music,\nfront loads the plot pretty heavily,  best db film\n14. kakkarot_73\n", "extractionText": "It\u2019s great.", "afterText": " Oh and prepare yourself for the chants.\n15. lightedge\nOverall really good lore, really good animation too. There is some bad character CGI\nthough, su", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">great</span>}</div>"}, {"index": 22, "class": "opinion_statement", "text": "Overall really good lore, really good animation too.", "color": "#C8E6C9", "startPos": 3301, "endPos": 3353, "beforeText": "oks, cool music,\nfront loads the plot pretty heavily,  best db film\n14. kakkarot_73\nIt\u2019s great. Oh and prepare yourself for the chants.\n15. lightedge\n", "extractionText": "Overall really good lore, really good animation too.", "afterText": " There is some bad character CGI\nthough, such as the combined Goku and Vegeta beam attack that looks noticeably worse then\nthe real 2d art.\n16. Megado", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">lore and animation</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">really good lore, really good animation</span>}</div>"}, {"index": 23, "class": "opinion_statement", "text": "There is some bad character CGI though, such as the combined Goku and Vegeta beam attack that looks noticeably worse then the real 2d art.", "color": "#C8E6C9", "startPos": 3354, "endPos": 3492, "beforeText": "  best db film\n14. kakkarot_73\nIt\u2019s great. Oh and prepare yourself for the chants.\n15. lightedge\nOverall really good lore, really good animation too. ", "extractionText": "There is some bad character CGI\nthough, such as the combined Goku and Vegeta beam attack that looks noticeably worse then\nthe real 2d art.", "afterText": "\n16. Megadoomer2\nI&#x27;d say that it&#x27;s one of my favourite DBZ movies - it&#x27;s either DBS Broly or Battle of\nGods.\n17. ArtisanofWar7\nThe pacing is the only ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">character CGI</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">bad character CGI, noticeably worse</span>}</div>"}, {"index": 24, "class": "opinion_statement", "text": "I'd say that it's one of my favourite DBZ movies - it's either DBS Broly or Battle of Gods.", "color": "#C8E6C9", "startPos": 3509, "endPos": 3600, "beforeText": " is some bad character CGI\nthough, such as the combined Goku and Vegeta beam attack that looks noticeably worse then\nthe real 2d art.\n16. Megadoomer2\n", "extractionText": "I&#x27;d say that it&#x27;s one of my favourite DBZ movies - it&#x27;s either DBS Broly or Battle of\nGods.", "afterText": "\n17. ArtisanofWar7\nThe pacing is the only true issue, the music chants are personal preference  Otherwise,\nit&#x27;s probably the best if not one of the be", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">DBZ movies</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">one of my favourite</span>}</div>"}, {"index": 25, "class": "opinion_statement", "text": "The pacing is the only true issue, the music chants are personal preference Otherwise, it's probably the best if not one of the best dragonball movies there is", "color": "#C8E6C9", "startPos": 3619, "endPos": 3779, "beforeText": "e then\nthe real 2d art.\n16. Megadoomer2\nI&#x27;d say that it&#x27;s one of my favourite DBZ movies - it&#x27;s either DBS Broly or Battle of\nGods.\n17. ArtisanofWar7\n", "extractionText": "The pacing is the only true issue, the music chants are personal preference  Otherwise,\nit&#x27;s probably the best if not one of the best dragonball movies there is", "afterText": "\n18. ItsLucs\nIt&#x27;s a good film, good animation, good music... But it&#x27;s empty, 30 min of story, 1h15 of\nfighting, and some scenes would have been more d", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">pacing and music chants</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">pacing is the only true issue</span>}</div>"}, {"index": 26, "class": "opinion_statement", "text": "it's probably the best if not one of the best dragonball movies there is", "color": "#C8E6C9", "startPos": 3707, "endPos": 3779, "beforeText": " - it&#x27;s either DBS Broly or Battle of\nGods.\n17. ArtisanofWar7\nThe pacing is the only true issue, the music chants are personal preference  Otherwise,\n", "extractionText": "it&#x27;s probably the best if not one of the best dragonball movies there is", "afterText": "\n18. ItsLucs\nIt&#x27;s a good film, good animation, good music... But it&#x27;s empty, 30 min of story, 1h15 of\nfighting, and some scenes would have been more d", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">dragonball movies</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best if not one of the best</span>}</div>"}, {"index": 27, "class": "opinion_statement", "text": "It's a good film, good animation, good music...", "color": "#C8E6C9", "startPos": 3792, "endPos": 3839, "beforeText": "true issue, the music chants are personal preference  Otherwise,\nit&#x27;s probably the best if not one of the best dragonball movies there is\n18. ItsLucs\n", "extractionText": "It&#x27;s a good film, good animation, good music...", "afterText": " But it&#x27;s empty, 30 min of story, 1h15 of\nfighting, and some scenes would have been more developped i think :) but it&#x27;s still one of\nmy favorite :)\n19", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">film, animation, music</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">good film, good animation, good music</span>}</div>"}, {"index": 28, "class": "opinion_statement", "text": "But it's empty, 30 min of story, 1h15 of fighting, and some scenes would have been more developped i think :) but it's still one of my favorite :)", "color": "#C8E6C9", "startPos": 3840, "endPos": 3986, "beforeText": "ence  Otherwise,\nit&#x27;s probably the best if not one of the best dragonball movies there is\n18. ItsLucs\nIt&#x27;s a good film, good animation, good music... ", "extractionText": "But it&#x27;s empty, 30 min of story, 1h15 of\nfighting, and some scenes would have been more developped i think :) but it&#x27;s still one of\nmy favorite :)", "afterText": "\n19. Finally_Vanilla\nYou know where Brolys dad said &quot;Attaaaaack!&quot; to broly? They did the same scene in this new\none and i laughed and exited. I couldn", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">empty, 30 min of story, 1h15 of fighting, some scenes would have been more developped</span>}</div>"}, {"index": 29, "class": "opinion_statement", "text": "it's still one of my favorite :)", "color": "#C8E6C9", "startPos": 3954, "endPos": 3986, "beforeText": "film, good animation, good music... But it&#x27;s empty, 30 min of story, 1h15 of\nfighting, and some scenes would have been more developped i think :) but ", "extractionText": "it&#x27;s still one of\nmy favorite :)", "afterText": "\n19. Finally_Vanilla\nYou know where Brolys dad said &quot;Attaaaaack!&quot; to broly? They did the same scene in this new\none and i laughed and exited. I couldn", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">one of my favorite</span>}</div>"}, {"index": 30, "class": "audience_impact", "text": "I laughed and exited", "color": "#D2E3FC", "startPos": 4106, "endPos": 4126, "beforeText": "&#x27;s still one of\nmy favorite :)\n19. Finally_Vanilla\nYou know where Brolys dad said &quot;Attaaaaack!&quot; to broly? They did the same scene in this new\none and ", "extractionText": "i laughed and exited", "afterText": ". I couldnt take it anymore.\n20. mhead26\nLooked a little disney in the graphics sometimes but other than that it was great.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">laughter, excitement</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">Brolys dad said &quot;Attaaaaack!&quot; to broly</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the reviewer</span>}</div>"}, {"index": 31, "class": "opinion_statement", "text": "it was great", "color": "#C8E6C9", "startPos": 4236, "endPos": 4248, "beforeText": "in this new\none and i laughed and exited. I couldnt take it anymore.\n20. mhead26\nLooked a little disney in the graphics sometimes but other than that ", "extractionText": "it was great", "afterText": ".\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">great</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
